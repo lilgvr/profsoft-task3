@@ -1,6 +1,6 @@
 # ProfSoft Education Center task №3
 
-## Task to work with JS *Map* build-in object
+## Task to work with JS *Map* built-in object
 
 ---
 
