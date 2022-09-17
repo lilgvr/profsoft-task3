@@ -1,4 +1,4 @@
-const array = [
+export const array = [
     {
         orderId: 554,
         creationDate: "2017-03-25T10:35:20", // Saturday
@@ -41,4 +41,12 @@ const array = [
     }
 ];
 
-export default array;
+export const daysOfWeek = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+]

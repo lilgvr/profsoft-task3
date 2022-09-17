@@ -22,7 +22,9 @@ module.exports = {
             directory: path.join(__dirname, 'src')
         },
     },
-    module: {},
+    module: {
+
+    },
     plugins: [
         new HtmlWebpackPlugin({
             filename: "index.html",
