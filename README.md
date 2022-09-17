@@ -15,13 +15,13 @@
 > Example:
 >```js
 >{
->"Monday" : 3,
->"Tuesday" : 0,
->"Wednesday" : 0,
->"Thursday" : 0,
->"Friday" : 0,
->"Saturday" : 4,
->"Sunday" : 4
+>   "Monday" : 3,
+>   "Tuesday" : 0,
+>   "Wednesday" : 0,
+>   "Thursday" : 0,
+>   "Friday" : 0,
+>   "Saturday" : 4,
+>   "Sunday" : 4
 >}
 
 ---
