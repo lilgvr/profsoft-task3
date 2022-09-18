@@ -1,9 +1,5 @@
 import {array, daysOfWeek} from "./data"
 
-const input = document.querySelector('#productIdInput');
-const button = document.querySelector('#inputButton');
-const mapContainer = document.querySelector('.mapContainer');
-
 const getDayProductsCountById = (id) => {
     const resultMap = new Map();
 
@@ -24,8 +20,11 @@ const getDayProductsCountById = (id) => {
 }
 
 const render = () => {
-    mapContainer.innerHTML = '';
+    const input = document.querySelector('#productIdInput');
+    const mapContainer = document.querySelector('.mapContainer');
     const map = getDayProductsCountById(Number(input.value));
+
+    mapContainer.innerHTML = '';
 
     for (let [key, value] of map) {
         const keyElement = document.createElement('span');
@@ -39,6 +38,8 @@ const render = () => {
 }
 
 const main = () => {
+    const button = document.querySelector('#inputButton');
+
     render();
     button.onclick = render;
 }
