@@ -9,11 +9,11 @@ const getDayProductsCountById = (id) => {
 
     for (let i = 0; i < array.length; i++) {
         const dayIndex = new Date(array[i].creationDate).getDay();
-        const day = daysOfWeek[dayIndex];
+        const dayName = daysOfWeek[dayIndex];
 
-        const len = array[i].orderLines.filter(line => id === line.productId).length;
+        const productsCout = array[i].orderLines.filter(line => id === line.productId).length;
 
-        resultMap.set(day, resultMap.get(day) + len);
+        resultMap.set(dayName, resultMap.get(dayName) + productsCout);
     }
 
     return resultMap;
