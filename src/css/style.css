@@ -13,17 +13,25 @@ body {
     font-family: -apple-system, sans-serif;
 }
 
-.mapContainer {
+.mapContainer, .inputContainer {
     display: flex;
     margin: auto;
     flex-direction: column;
     align-items: center;
 }
 
-input {
+.inputContainer {
     margin: 40px 0;
 }
 
 .mapContainer > span {
     margin-top: 10px;
+}
+
+input, button {
+    margin-top: 20px;
+}
+
+button:hover {
+    cursor: pointer;
 }

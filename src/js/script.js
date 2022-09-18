@@ -1,6 +1,7 @@
 import {array, daysOfWeek} from "./data"
 
 const input = document.querySelector('#productIdInput');
+const button = document.querySelector('#inputButton');
 const mapContainer = document.querySelector('.mapContainer');
 
 const getDayProductsCountById = (id) => {
@@ -39,7 +40,7 @@ const render = () => {
 
 const main = () => {
     render();
-    input.oninput = render;
+    button.onclick = render;
 }
 
 window.onload = main;
