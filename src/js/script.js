@@ -22,7 +22,7 @@ const getDayProductsCountById = (id) => {
 const render = () => {
     const input = document.querySelector('#productIdInput');
     const mapContainer = document.querySelector('.mapContainer');
-    const map = getDayProductsCountById(Number(input.value));
+    const map = getDayProductsCountById(+input.value);
 
     mapContainer.innerHTML = '';
 
